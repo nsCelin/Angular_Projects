@@ -1,0 +1,4 @@
+ng g service vehicleservice 
+ng g service vehicle 
+ng g component vehicle-list 
+ng g component vehicle-details 

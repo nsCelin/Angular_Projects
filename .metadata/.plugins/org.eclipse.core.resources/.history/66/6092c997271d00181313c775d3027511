@@ -1,0 +1,7 @@
+<!-- <p>
+  app-hello-world works!
+</p> -->
+
+<h1> 
+  {{message}}
+</h1>

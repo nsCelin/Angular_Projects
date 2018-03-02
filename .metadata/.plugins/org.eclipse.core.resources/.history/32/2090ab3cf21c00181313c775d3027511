@@ -1,0 +1,28 @@
+/*importing the Component decorator function and the OnInit interface
+decorator function is describing metadata for any Angular 2 reusable UI component* 
+ The OnInit interface extension is used to register an init lifecycle hook.*/
+
+import { Vehicle } from '../model/Vehicle';
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  
+  //Selector specifies the tag name that would trigger this component’s insertion
+  selector: 'app-vehicle-list',
+  
+  /*TemplateUrl and styleUrls specify the file names that contain an HTML-based 
+   template for the component UI and CSS styling for it.*/
+  templateUrl: './vehicle-list.component.html',
+  styleUrls: ['./vehicle-list.component.css']
+})
+export class VehicleListComponent implements OnInit {
+  
+  vehicles : Vehicle[];
+
+  constructor() { }
+
+  /*can be useful for some “heavy” initialization like network or database calls. */
+  ngOnInit() {
+  }
+
+}

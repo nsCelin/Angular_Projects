@@ -1,0 +1,20 @@
+/*importing the Component decorator function and the OnInit interface
+decorator function is describing metadata for any Angular 2 reusable UI component*/
+import { Vehicle } from '../model/Vehicle';
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-vehicle-list',
+  templateUrl: './vehicle-list.component.html',
+  styleUrls: ['./vehicle-list.component.css']
+})
+export class VehicleListComponent implements OnInit {
+  
+  vehicles : Vehicle[];
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

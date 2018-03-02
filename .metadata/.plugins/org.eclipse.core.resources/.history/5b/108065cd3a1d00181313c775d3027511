@@ -1,0 +1,13 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  //templateUrl: './app.component.html',
+  //template: './vehicle-list/vehicle-list.component.html',
+  //templateUrl: './vehicle-list/vehicle-list.component.html',
+  template: './vehicle-list/vehicle-list.component.html',
+  styleUrls: ['./app.component.css'
+})
+export class AppComponent {
+  title = 'app';
+}
